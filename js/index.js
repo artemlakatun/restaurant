@@ -32,8 +32,8 @@ window.addEventListener('DOMContentLoaded', () => {
             })
         }
     });
-    //timer
 
+    //timer
     const deadline = '2024-05-20';
 
     function getTimeRemaining(endtime) {
@@ -94,4 +94,27 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     setClock('.timer', deadline);
+
+    //modal
+    modalTrigger.forEach(btn => {
+       btn.addEventListener('click', () => {
+           modal.classList.add('show');
+           modal.classList.remove('hide');
+           document.body.style.overflow = 'hidden';
+       });
+    });
+
+    function closeModal() {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    modalCloseBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (event) => {
+        if(event.target === modal) {
+            closeModal();
+        }
+    })
 });
