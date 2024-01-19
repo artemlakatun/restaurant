@@ -3,4 +3,5 @@ const tabs = document.querySelectorAll('.tab-header__item'),
     tabsParent = document.querySelector('.tab-header__items'),
     modalTrigger = document.querySelectorAll('[data-modal]'),
     modal = document.querySelector('.modal'),
-    modalCloseBtn = document.querySelector('[data-close]');
+    forms = document.querySelectorAll('form'),
+    prevModalDialog = document.querySelector('.modal__dialog');
