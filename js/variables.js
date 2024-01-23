@@ -14,4 +14,6 @@ const tabs = document.querySelectorAll('.tab-header__item'),
     current = document.querySelector('#current'),
     slidesWrapper = document.querySelector('.offer__slider-wrapper'),
     slidesField = document.querySelector('.offer__slider-inner'),
-    slider = document.querySelector('.offer__slider');
+    slider = document.querySelector('.offer__slider'),
+
+    result = document.querySelector('.calculating__result span');
